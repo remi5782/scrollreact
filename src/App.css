@@ -1,6 +1,8 @@
 :root {
   --off-white: #fafafa;
 }
+
+
 .nav {
   background-color: var(--off-white);
   position: sticky;
@@ -45,16 +47,22 @@
 }
 
 .section-dark {
-  background: #333;
-  color: white;
+  /* background: #333; */
+  color: darkslategray;
+  background-image: url(https://media.giphy.com/media/3JS3Q7qrEVzsc6l5nm/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
 }
 
 .section-content {
   max-width: 800px;
+  min-height: 715px;
   margin: 0 auto;
   padding: 40px;
-  opacity: 0.5;
+  opacity: 0.15;
   transition: all 1s cubic-bezier(20,20,20,20);
+  
 }
 
 .section-content.active {
