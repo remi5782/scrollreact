@@ -9,12 +9,10 @@ import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 import { Link, animateScroll as scroll } from "react-scroll";
 import Section from "./Section";
 import GSection from './GeneralSection';
+import AboutSection from './AboutSection';  
 import dummyText from "../DummyText";
 
 
@@ -55,6 +53,7 @@ const mockObjWrapper = [{key: 'section1',value: 'Section 1'},{key: 'section2',va
 export default function PermanentDrawerLeft() {
   const classes = useStyles();
   const [activeSection, setActiveSection] = React.useState('section1');
+  
 //   const renderListItem = (sectionLabel, sectionValue) =>{
 //     return (
 //         <Link
@@ -112,7 +111,7 @@ export default function PermanentDrawerLeft() {
                 to={text}
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={0}
                 duration={500}
                 onClick={()=>setActiveSection(text)}
                 onSetActive={(to)=> setActiveSection(to)}
@@ -134,7 +133,7 @@ export default function PermanentDrawerLeft() {
           activeContent = {activeSection === 'Home'}
 
         />
-        <Section
+        <AboutSection
           title="About"
           subtitle={dummyText}
           dark={false}

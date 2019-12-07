@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import AppTheme from './StyleTheme';
 import {MuiThemeProvider} from '@material-ui/core/styles';
 
+console.log(AppTheme);
 ReactDOM.render(<MuiThemeProvider theme={AppTheme}><VerticalNavApp /></MuiThemeProvider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

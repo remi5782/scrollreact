@@ -1,7 +1,10 @@
 :root {
   --off-white: #fafafa;
 }
-
+@font-face {
+  font-family: "Raleway";
+  src: url("./fonts/Raleway.woff2") format("woff2")
+}
 
 .nav {
   background-color: var(--off-white);
@@ -56,13 +59,21 @@
 }
 
 .section-content {
-  max-width: 800px;
-  min-height: 715px;
+  /* max-width: 800px; */
+  min-height: 775px;
   margin: 0 auto;
   padding: 40px;
   opacity: 0.15;
   transition: all 1s cubic-bezier(20,20,20,20);
   
+}
+.section-content > p {
+  font-size: '7em';
+  transition: all 1s cubic-bezier(20,20,20,20);
+}
+
+.section-content.active > p {
+  font-size: '4em'
 }
 
 .section-content.active {

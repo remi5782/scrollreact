@@ -5,8 +5,8 @@ export default function GeneralSection({ title, subtitle, dark, id, activeConten
     return (
         <div className={"section" + (dark ? " section-dark" : "")}>
             <div className={"section-content" + (activeContent ? " active" : "")} id={id}>
-                <Typography variant="h3" component="h3">
-                    I'm Remy and Front-End Developer .. Here I am 
+                <Typography variant="title" component="h1">
+                    I'm Remy and am a Front-End Web Developer
                 </Typography>
                 {/* <h1>{title}</h1> */}
                 {/* <GridList/> */}
