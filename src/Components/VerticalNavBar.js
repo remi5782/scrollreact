@@ -13,6 +13,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import Section from "./Section";
 import GSection from './GeneralSection';
 import AboutSection from './AboutSection';  
+import ThingsIdo from './ThingsIdo';
 import dummyText from "../DummyText";
 
 
@@ -140,7 +141,7 @@ export default function PermanentDrawerLeft() {
           id="About"
           activeContent = {activeSection === 'About'}
         />
-        <Section
+        <ThingsIdo
           title="Services"
           subtitle={dummyText}
           dark={true}

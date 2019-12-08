@@ -39,9 +39,10 @@ export default function GeneralSection({ title, subtitle, dark, id, activeConten
       </Typography>
 <Grid container className={classes.root} spacing ={2}>
     {mockAOE.map(data=> (
-        <Grid item lg={3}
+        <Grid item lg={3}  xs={12}
         >
         <Card
+            activeContent={activeContent}
             {...data}
         />
         </Grid>
