@@ -30,7 +30,7 @@ export default function SkillsIHave({ title, subtitle, dark, id, activeContent }
                 </Typography>
                 
       <Typography variant="h3">
-        This is what I do 
+        My Skills are 
       </Typography>
         <Grid container className={classes.root}   spacing={2} gutterBottom> 
             {mockTID.map(data=> (

@@ -104,6 +104,10 @@ a.active {
   -webkit-animation: slide-down .3s ease-out;
     
 }
+.skillCard{
+  text-align: center;
+  min-height: 16rem;
+}
 
 @-webkit-keyframes slide-down {
   0% { opacity: 0; -webkit-transform: translateY(-100%); }   

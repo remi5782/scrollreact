@@ -26,7 +26,7 @@ export default function SimpleCard({activeContent = false,footerColor,additional
           marginBottom: 12,
         },
         description:{
-            minHeight: '3rem'
+            //minHeight: '3rem'
         }
       });
   const classes = useStyles();
@@ -46,18 +46,17 @@ export default function SimpleCard({activeContent = false,footerColor,additional
         />
       <CardContent>
       
-        {/* <Typography variant="h5" component="h2">
-          {title}
-        </Typography> */}
-        <Typography className={classes.pos} color="textSecondary">
-        {title}
+        <Typography variant="h6" component="h3">
+          <i>{title}</i>
         </Typography>
+        {/* <Typography className={classes.pos} color="textSecondary">
+        {title}
+        </Typography> */}
         {/* <Typography  className={classes.description} variant="body2" component="p">
           {description}
           <br />
           <p className={`moreContent ` + (viewMore? 'active' : '')}>There are more details  yet to be displayed</p>
         </Typography> */}
-        <i onClick= {()=> setViewMore(!viewMore)}>...</i>
       </CardContent>
       <CardActions className={classes.cardFooter}>
             

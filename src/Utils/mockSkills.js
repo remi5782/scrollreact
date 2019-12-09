@@ -1,42 +1,27 @@
 export default [
     {
-        imageUrl: '/images/react-redux.png',
-        title: 'Salesforce',
+        imageUrl: '/images/html5.png',
+        title: 'HTML5',
         description: "Using a advanced Javascript frameworks like React, Angular"
     },
     {
-        imageUrl: '/images/react-native.png',
-        title: 'Hybrid Mobile App Development',
+        imageUrl: '/images/css3.png',
+        title: 'CSS3',
         description: "Using the famous React Native Library"
     },
     {
-        imageUrl: '/images/SEO.png',
-        title: 'SEO',
+        imageUrl: '/images/javascript.png',
+        title: 'JavaScript',
         description: "Using Server Side Rendering its possible when a Search Engine Optimization need arises when you wanna see your web page top of search list"
     },
     {
-        imageUrl: '/images/webAnalytics.jpg',
-        title: 'Web Analytics',
+        imageUrl: '/images/node.png',
+        title: ' Node JS',
         description: "Using Google Web Analytics tool we can keep track of every action that user perfomes . Good for business "
     },
     {
-        imageUrl: '/images/PWA.png',
-        title: 'PWA',
+        imageUrl: '/images/mongodb.png',    
+        title: 'MongoDB',
         description: "Progressive Web Applications making your Customers feel online even on a offline mode"
-    },
-    {
-        imageUrl: '/images/graphQL.png',
-        title: 'API-Modelling',
-        description: "Server responds to a completly workable query send by client.  A bye bye to Restful API's "
-    },
-    {
-        imageUrl: '/images/database.png',
-        title: 'Database',
-        description: "Migrating to cloud might be much easier with NOSQL DB like MongoDB which serves the purpose"
-    },
-    {
-        imageUrl: '/images/CLOUD.png',
-        title: 'Cloud',
-        description: "Yes Its possible to deploy the code on the fly using AWS Services / Deploying the Docker Container somewhere in cloud"
     }
 ]

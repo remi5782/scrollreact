@@ -104,8 +104,9 @@ export default function PermanentDrawerLeft() {
           ))}
         </List> */}
         <Divider />
+        {/* {Experience, Education} */}
         <List>
-          {['Home', 'About', 'Services', 'Skills', 'Education','Experience'].map((text, index) => (
+          {['Home', 'About', 'Services', 'Skills', 'Experience'].map((text, index) => (
             <ListItem  button key={text}>
               {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
               <Link
@@ -157,11 +158,11 @@ export default function PermanentDrawerLeft() {
           activeContent = {activeSection === 'Skills'}
         />
         <Section
-          title="Education"
+          title="Experience"
           subtitle={dummyText}
           dark={true}
-          id="Education"
-          activeContent = {activeSection === 'Education'}
+          id="Experience"
+          activeContent = {activeSection === 'Experience'}
         />
       </main>
     </div>

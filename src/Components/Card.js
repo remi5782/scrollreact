@@ -58,10 +58,9 @@ export default function SimpleCard({activeContent = false,additionalClass="",ico
           <br />
           <p className={`moreContent ` + (viewMore? 'active' : '')}>These are more details</p>
         </Typography>
-        <i onClick= {()=> setViewMore(!viewMore)}>...</i>
       </CardContent>
       <CardActions className={classes.cardFooter} onClick={()=> setViewMore(!viewMore)}>
-            Learn More
+           
             
       </CardActions>
     </Card>
