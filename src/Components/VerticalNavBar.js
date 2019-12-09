@@ -14,6 +14,7 @@ import Section from "./Section";
 import GSection from './GeneralSection';
 import AboutSection from './AboutSection';  
 import ThingsIdo from './ThingsIdo';
+import Skills from './SkillSection';
 import dummyText from "../DummyText";
 
 
@@ -148,7 +149,7 @@ export default function PermanentDrawerLeft() {
           id="Services"
           activeContent = {activeSection === 'Services'}
         />
-        <Section
+        <Skills
           title="Skills"
           subtitle={dummyText}
           dark={false}
