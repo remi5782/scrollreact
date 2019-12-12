@@ -2,7 +2,7 @@
 export default [
     {
         imageUrl: '/images/react-redux.png',
-        title: 'Salesforce',
+        title: 'Web Development',
         description: "Using a advanced Javascript frameworks like React, Angular"
     },
     {
