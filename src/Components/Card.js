@@ -13,6 +13,9 @@ import { loadCSS } from 'fg-loadcss';
 export default function SimpleCard({activeContent = false,additionalClass="",iconLabel,iconColor,footerColor,title,description}) {
     const [viewMore, setViewMore]= React.useState(false);
     const useStyles = makeStyles({
+      root: {
+        minHeight: '14rem',maxHeight: '18rem'
+      },
         bullet: {
           display: 'inline-block',
           margin: '0 2px',
@@ -32,7 +35,7 @@ export default function SimpleCard({activeContent = false,additionalClass="",ico
             background: footerColor
         },
         description:{
-            minHeight: '5rem'
+            minHeight: '5.75rem'
         }
       });
   const classes = useStyles();
@@ -44,8 +47,8 @@ export default function SimpleCard({activeContent = false,additionalClass="",ico
   }, []);
 
   return (
-    <Card className={'card' + (activeContent ? " active " : "") + additionalClass}>
-      <CardContent>
+    <Card className={' card' + (activeContent ? " active " : "") + additionalClass}>
+      <CardContent className={classes.root}>
       <i className={`${iconLabel} ${classes.iconStyle}`}></i>
         <Typography variant="h5" component="h2">
           {title}
